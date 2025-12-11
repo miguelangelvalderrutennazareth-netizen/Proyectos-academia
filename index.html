@@ -2,192 +2,49 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Proyectos MYROBOTECH</title>
+  <title>Proyectos 2025 MYROBOTECH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    :root {
-      --gris-fondo:   #d0d0d0;
-      --gris-oscuro: #595959;
-      --gris-borde: #333333;
-      --blanco: #00000001;
-      --azul-texto: #000000;
-    }
- 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #383838;
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .frame {
-      max-width: 1000px;
-      width: 100%;
-      border: 4px solid #000;
-      background: var(--gris-fondo);
-    }
-
-    header {
-      background: var(--gris-oscuro);
-      color: #fff;
-      text-align: center;
-      padding: 20px 10px;
-      font-size: 1.5rem;
-      letter-spacing: 1px;
-    }
-
-    main {
-      padding: 10px;
-      border-top: 4px solid #000;
-      border-bottom: 4px solid #000;
-      background: var(--gris-fondo);
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 160px 160px;
-      gap: 6px;
-    }
-
-    .box {
-      background: #bfbfbf;
-      border: 3px solid var(--gris-borde);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      position: relative;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-      cursor: pointer;
-    }
-
-    .box span {
-      background: var(--blanco);
-      padding: 8px 20px;
-      color: var(--azul-texto);
-      font-weight: 600;
-      text-align: center;
-      border-radius: 2px;
-      white-space: nowrap;
-    }
-
-    .box:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-
-    .box-campamento   { grid-column: 1 / 2; grid-row: 1 / 2; }
-    .box-roblox       { grid-column: 1 / 2; grid-row: 2 / 3; }
-    .box-kicad        { grid-column: 2 / 3; grid-row: 1 / 2; }
-    .box-Tinkercad       { grid-column: 2 / 3; grid-row: 2 / 3; }
-    .box-minercrak    { grid-column: 3 / 4; grid-row: 1 / 2; }
-    .box-appinventor  { grid-column: 3 / 4; grid-row: 2 / 3; }
-    .box-unity        { grid-column: 4 / 5; grid-row: 1 / 2; }
-    .box-proteus      { grid-column: 4 / 5; grid-row: 2 / 3; }
-    .box-wokwi        { grid-column: 5 / 6; grid-row: 1 / 3; }
-
-    footer {
-      background: var(--gris-fondo);
-      display: flex;
-      border-top: 4px solid #000;
-      font-size: 0.95rem;
-    }
-
-    .footer-item {
-      flex: 1;
-      padding: 10px;
-      text-align: center;
-      border-right: 2px solid #020202;
-    }
-
-    .footer-item:last-child {
-      border-right: none;
-    }
-
-    @media (max-width: 800px) {
-      .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-      }
-
-      .box,
-      .box-campamento,
-      .box-roblox,
-      .box-kicad,
-      .box-Tinkercad,
-      .box-minercrak,
-      .box-appinventor,
-      .box-unity,
-      .box-proteus,
-      .box-wokwi {
-        grid-column: auto;
-        grid-row: auto;
-        min-height: 120px;
-      }
-
-      footer {
-        flex-direction: column;
-      }
-
-      .footer-item {
-        border-right: none;
-        border-bottom: 2px solid #000;
-      }
-
-      .footer-item:last-child {
-        border-bottom: none;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico" />
 </head>
 <body>
-  <div class="frame">
-    <header>
-      Proyectos MYROBOTECH
-    </header>
+  <header>
+    <span>Proyectos 2025 MYROBOTECH</span>
+    <img src="imagenes/logos/Logo1.png" alt="MYROBOTECH" class="header-logo">
+  </header>
+  
+  <main>
+    <div class="projects-grid">
+      <a href="campamento-lunar.html" target="_blank" class="box box-campamento" title="Campamento luna" aria-label="Campamento luna"></a>
+      <a href="roblox.html" target="_blank" class="box box-roblox" title="Roblox" aria-label="Roblox"></a>
+      <a href="kicad.html" target="_blank" class="box box-kicad" title="Kicad" aria-label="Kicad"></a>
+      <a href="tinkercad.html" target="_blank" class="box box-tinkercad" title="Tinkercad" aria-label="Tinkercad"></a>
+      <a href="minecraft.html" target="_blank" class="box box-minercrak" title="Minecraft" aria-label="Minercrak"></a>
+      <a href="appinventor.html" target="_blank" class="box box-appinventor" title="App inventor" aria-label="App inventor"></a>
+      <a href="unity.html" target="_blank" class="box box-unity" title="Unity" aria-label="Unity"></a>
+      <a href="proteus.html" target="_blank" class="box box-proteus" title="Proteus" aria-label="Proteus"></a>
+      <a href="wowik.html" target="_blank" class="box box-wokwi" title="Wokwi" aria-label="Wokwi"></a>
+    </div>
+  </main>
 
-    <main>
-      <div class="projects-grid">
-        <!-- target="_blank" = abre en otra pestaña; quítalo si quieres en la misma -->
-        <a href="campamento-lunar.html" target="_blank" class="box box-campamento">
-          <span>Campamento luna</span>
-        </a>
-        <a href="roblox.html" target="_blank" class="box box-roblox">
-          <span>Roblox</span>
-        </a>
-        <a href="kicad.html" target="_blank" class="box box-kicad">
-          <span>Kicad</span>
-        </a>
-        <a href="tinkercad.html" target="_blank" class="box box-Tinkercad">
-          <span>Tinkercad</span>
-        </a>
-        <a href="minercrak.html" target="_blank" class="box box-minercrak">
-          <span>Minercrak</span>
-        </a>
-        <a href="appinventor.html" target="_blank" class="box box-appinventor">
-          <span>App inventor</span>
-        </a>
-        <a href="unity.html" target="_blank" class="box box-unity">
-          <span>Unity</span>
-        </a>
-        <a href="proteus.html" target="_blank" class="box box-proteus">
-          <span>Proteus</span>
-        </a>
-        <a href="wowik.html" target="_blank" class="box box-wokwi">
-          <span>Wokwi</span>
-        </a>
-      </div>
-    </main>
-
-    <footer>
-      <div class="footer-item">Profesor: Jose Gregorio</div>
-      <div class="footer-item">Aceptamos cualquier estudiante</div>
-      <div class="footer-item">Tenemos más clases</div>
-    </footer>
+ <footer>
+  <div class="footer-item">
+    <span class="footer-title">Equipo Docente</span>
+    <p>Profesor: José Gregorio</p>
+    <p>Contacto: admon@myrobotech.com.co</p>
   </div>
+  
+  <div class="footer-item">
+    <span class="footer-title">Admisiones</span>
+    <p>Modalidad abierta a todos los niveles.</p>
+    <p> <a href="https://www.myrobotech.com.co/cursos-de-robotica-para-ninos" target="_blank">Información General</a></p>
+  </div>
+  
+  <div class="footer-item">
+    <span class="footer-title">© 2025. MyRoboTech</span>
+    <p>Creado por: Miguel Angel Valderrutén Pantoja</p>
+
+  </div>
+</footer>
 </body>
 </html>
